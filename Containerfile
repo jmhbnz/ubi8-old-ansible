@@ -9,5 +9,7 @@ RUN pip install pip --upgrade \
     pip install ansible==2.1.0.0
 
 
+
 # Attempt to run the old ansible playbook to verify
-ansible-playbook old-playbook.yaml
+COPY *.yaml .
+RUN ansible-playbook old-playbook.yaml
