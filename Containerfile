@@ -7,3 +7,7 @@ USER root
 # Replace the pypi index with on premises nexus mirror
 RUN pip install pip --upgrade \
     pip install ansible==2.1.0.0
+
+
+# Attempt to run the old ansible playbook to verify
+ansible-playbook old-playbook.yaml
