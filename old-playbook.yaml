@@ -8,6 +8,8 @@
     - include: include-task.yaml
       static: no
 
-  - name: Test worked
-    debug:
-      msg: "Test worked"
+  tasks:
+
+    - name: Test worked
+      debug:
+        msg: "Test worked"
