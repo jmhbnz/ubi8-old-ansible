@@ -11,5 +11,6 @@ RUN pip install pip --upgrade \
 
 
 # Attempt to run the old ansible playbook to verify
-COPY *.yaml /
+COPY old-playbook.yaml /
+COPY include-task.yaml /
 RUN ansible-playbook old-playbook.yaml
