@@ -1,0 +1,13 @@
+---
+- name: Test playbook for old ansible
+  hosts: localhost
+  connection: local
+
+  # Run pre task with old 'static: ' syntax
+  pre_tasks:
+    - include: include-task.yaml
+      static: no
+
+  - name: Test worked
+    debug:
+      msg: "Test worked"

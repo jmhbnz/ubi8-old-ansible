@@ -1,0 +1,4 @@
+---
+ - name: Output test
+   debug:
+     msg: "Hello world"
