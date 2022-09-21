@@ -1,5 +1,5 @@
 # Replace this reference to an on premises image registry
-FROM registry.access.redhat.com/ubi8/python-39
+FROM registry.access.redhat.com/ubi8/python-27
 
 USER root
 
